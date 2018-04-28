@@ -297,6 +297,7 @@ struct board boardlist[] = {
   { "Supermicro",	"X7SBA",	WINBOND_W83793G,	0x2f,	volts_type06,	temps_type06,	fans_type06	},
   { "Supermicro",	"X7SBL",	WINBOND_W83793G,	0x2f,	volts_type06,	temps_type06,	fans_type06	},
   { "Supermicro",	"X7SBi",	WINBOND_W83793G,	0x2f,	volts_type06,	temps_type06,	fans_type06	},
+  { "ASUSTeK COMPUTER INC.",	"PRIME Z270-A",	NUVOTON_NCT6793D,	0x2f,	volts_type06,	temps_type06,	fans_type06	},
   { NULL,		NULL,		0,			0,	NULL,		NULL,		NULL		}
 
 /*

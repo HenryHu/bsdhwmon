@@ -41,6 +41,7 @@ extern void	list_models(struct board *);
 extern int	w83627hf_main(int, const int, struct sensors *);
 extern int	w83792d_main(int, const int, struct sensors *);
 extern int	w83793g_main(int, const int, struct sensors *);
+extern int	nct6793d_main(int, const int, struct sensors *);
 extern int	x6dva_main(int, struct sensors *);
 
 /*
@@ -227,6 +228,9 @@ main(int argc, char *argv[])
 		case WINBOND_W83793G:
 			ret = w83793g_main(smbfd, mb->slave, sdata);
 			break;
+        case NUVOTON_NCT6793D:
+            ret = nct6793d_main(smbfd, mb->slave, sdata);
+            break;
 		default:
 			warnx("Internal error.  Please report this bug to the author.");
 			exitcode = EX_SOFTWARE;

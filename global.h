@@ -24,7 +24,8 @@ extern int f_verbose;
 enum chips_e {
 	CUSTOM_X6DVA,
 	WINBOND_W83792D,
-	WINBOND_W83793G
+	WINBOND_W83793G,
+	NUVOTON_NCT6793D,
 };
 
 /*
